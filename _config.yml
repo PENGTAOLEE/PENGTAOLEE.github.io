@@ -114,6 +114,7 @@ aomori_logo: /images/avatar.jpg
 aomori_menu:
   Home: /
   Archives: /archives
+  Friends: /friends
 
 # 文章内容导航 TOC
 aomori_widgets:
