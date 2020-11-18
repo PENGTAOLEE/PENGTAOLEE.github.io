@@ -103,7 +103,9 @@ theme: hexo-theme-aomori
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: git@github.com:PENGTAOLEE/PENGTAOLEE.github.io.git
+  branch: main
 
 # 头像
 aomori_logo: /images/avatar.jpg
