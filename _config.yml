@@ -10,6 +10,7 @@ keywords: '前端 博客 开发 字节 byte'
 author: John Doe
 language: en
 timezone: ''
+favicon: /favicon.png
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
@@ -137,7 +138,7 @@ aomori_social:
     url:
 
 # 百度链接提交
-aomori_baidu_sitepush: true  # or false
+aomori_baidu_sitepush: false  # or false
 
 # 百度统计
 aomori_baidu_analytics: ''
