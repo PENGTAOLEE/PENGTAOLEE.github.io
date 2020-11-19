@@ -250,13 +250,12 @@ aomori_disqus_shortname: ''
 ``` yml
 aomori_gitalk:
   enable: true
-  clientID: GitHub Application Client ID
-  clientSecret: GitHub Application Client Secret
-  repo: GitHub repo
-  owner: GitHub repo owner
+  clientID: 0e63dabc1d40a585b941 #GitHub Application Client ID
+  clientSecret: 6c6b1ae31a2b32db85e9adc9e588e2f0bd400d29 #GitHub Application Client Secret
+  repo: git@github.com:PENGTAOLEE/byteiiTalk.git #GitHub repo
+  owner: PENGTAOLEE
   admin: 
-    - GitHub repo owner and collaborators
-    - GitHub repo owner and collaborators
+    - PENGTAOLEE
   distractionFreeMode: true // Facebook-like distraction free mode
 ```
 
