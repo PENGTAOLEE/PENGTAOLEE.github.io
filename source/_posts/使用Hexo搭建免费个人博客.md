@@ -2,8 +2,8 @@
 title: 使用Hexo搭建免费个人博客
 date: 2020-11-19 13:50:47
 tags: Hexo
-photos: 
-    - http://static.clearfix.ltd/byteiilogo.svg
+photos:
+- https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
 ---
 
 Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在很短的时间内，即可利用靓丽的主题生成静态网页。
@@ -102,12 +102,12 @@ $ hexo deploy
 > `@` 指向到`yourname.github.io`的 ip 
 > `www` 选择 `CNAME` 执行你的`yourname.github.io`
 
-![解析截图](http://static.clearfix.ltd/20201119150858.jpg)
+![解析截图](./20201119150858.jpg)
 
 2. 返回Github，配置你的域名
 进入你的项目`yourname.github.io`，然后`Settings`，把你的域名填写到`Custom domain`
 下面是我自己的配置
-![Github配置](http://static.clearfix.ltd/20201119151723.jpg)
+![Github配置](./20201119151723.jpg)
 
 3. 接下来，你就能用你的域名访问博客了。
 
