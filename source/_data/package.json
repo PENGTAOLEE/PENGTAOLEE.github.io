@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "hexo-algolia": "^1.3.1"
+  }
+}

@@ -169,6 +169,14 @@ layout: tweet
 # 文章评论
 aomori_disqus_shortname: ''
 
+# 搜索
+algolia:
+  applicationID: 'CH45RMFX9F'
+  apiKey: 'cfd706793bd277767018fe6dc682a734' # Search-Only API Key
+  indexName: 'byteii'
+
+aomori_search_algolia: true
+
 # Gitalk
 aomori_gitalk:
   enable: true
