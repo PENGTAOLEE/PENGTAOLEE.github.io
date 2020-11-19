@@ -7,6 +7,7 @@
     <title>使用Hexo搭建免费个人博客 | BYTEII.COM</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="baidu-site-verification" content="code-gxYXDmSsas" />
+    <meta name="theme-color" content="#f0f3f6">
     
         <meta property="algolia:search" data-application-id="CH45RMFX9F" data-api-key="cfd706793bd277767018fe6dc682a734" data-index-name="byteii">
     
@@ -121,13 +122,27 @@
             <section class="inner">
                 <section class="inner-main">
                     <div class="post">
-    <article id="post-ckhofvafz0004in67e2z4exb6" class="article article-type-post" itemscope
+    <article id="post-ckhojrgcj0003gv676vs5bsmk" class="article article-type-post" itemscope
     itemprop="blogPost">
 
     <div class="article-inner">
 
         
           
+
+<div class="swiper-container article-gallery">
+  <div class="swiper-wrapper">
+    
+      <div class="swiper-slide">
+        <img src="http://static.clearfix.ltd/byteiilogo.svg" itemprop="image">
+      </div>
+    
+  </div>
+  <!-- 如果需要分页器 -->
+  <div class="swiper-pagination"></div>
+</div>
+
+
         
         
         
@@ -167,10 +182,76 @@
         </div>
 
         <div class="article-entry post-inner-html hairline" itemprop="articleBody">
-            <p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在很短的时间内，即可利用靓丽的主题生成静态网页。本文利用Hexo + Github，详细介绍如何在没有自己服务器的情况下轻松搭建个人轻博客。</p>
+            <p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在很短的时间内，即可利用靓丽的主题生成静态网页。<br>本文利用Hexo + Github，详细介绍如何在没有自己服务器的情况下轻松搭建个人轻博客。</p>
 <a id="more"></a>
 
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul>
+<li>Node.js</li>
+<li>Git</li>
+<li>Github账号</li>
+<li>域名</li>
+</ul>
+<h2 id="Hexo-环境搭建"><a href="#Hexo-环境搭建" class="headerlink" title="Hexo 环境搭建"></a>Hexo <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/setup">环境搭建</a></h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><pre><code class="bash">$ npm install -g hexo-cli</code></pre>
+<h3 id="生成博客文件"><a href="#生成博客文件" class="headerlink" title="生成博客文件"></a>生成博客文件</h3><pre><code class="bash">$ hexo init &lt;folder&gt;
+$ cd &lt;folder&gt;
+$ npm install</code></pre>
+<pre><code class="bash">$ hexo server</code></pre>
+<p>访问网址为：<code>http://localhost:4000/</code>， 此时已经在你本地运行起一个博客系统了，接下来创建git仓库</p>
+<h2 id="Github仓库"><a href="#Github仓库" class="headerlink" title="Github仓库"></a>Github仓库</h2><p>首先，你需要新建一个Github项目。如果你希望你的站点能通过<code>&lt;你的GitHub用户名&gt;.github.io</code>域名访问，你的项目应该直接命名为<code>&lt;你的GitHub用户名&gt;.github.io</code>。</p>
+<p>创建仓库之后，开始准备部署博客。</p>
+<h2 id="部署博客"><a href="#部署博客" class="headerlink" title="部署博客"></a>部署博客</h2><ol>
+<li>首先安装 <code>hexo-deployer-git</code>，这个是一个依赖包，后面会用到</li>
+</ol>
+<pre><code class="bash">$ npm install hexo-deployer-git --save</code></pre>
+<ol start="2">
+<li>在 <code>_config.yml</code> 添加如下配置：</li>
+</ol>
+<pre><code class="bash">deploy:
+  type: git
+  repo: https://github.com/&lt;yourname&gt;/&lt;project&gt;
+  branch: gh-pages</code></pre>
+<ol start="3">
+<li>部署项目</li>
+</ol>
+<pre><code class="bash">$ hexo generate
+$ hexo deploy</code></pre>
+<ol start="4">
+<li>查看 <code>yourname.github.io</code> 上的网页，检查是否部署成功。</li>
+</ol>
+<blockquote>
+<p>如果想了解<code>Travis CI</code>部署，可以移步<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/github-pages">将 Hexo 部署到 GitHub Pages</a></p>
+</blockquote>
+<h2 id="修改模板"><a href="#修改模板" class="headerlink" title="修改模板"></a>修改模板</h2><p>此时如果前面运行都正常已经可以使用 <code>yourname.github.io</code> 访问你的博客了，但是你会发现默认的模板特别丑。没关系，社区提供了大量免费的模板可供你使用。<a target="_blank" rel="noopener" href="https://hexo.io/themes/">Hexo主题</a></p>
+<p>下面用 <code>hexo-theme-yilia</code> 模板举例</p>
+<pre><code class="bash"># 进入主题文件夹
+$ cd themes
+# 下载主题
+$ git clone https://github.com/litten/hexo-theme-yilia</code></pre>
+<p>修改<code>_config.yml</code>中的<code>theme</code>为<code>hexo-theme-yilia</code></p>
+<p>每个模板都会有自己的一套配置，可以认真阅读自己喜欢模板的文档做修改，做完这一切，重新发布一次即可</p>
+<pre><code class="bash">$ hexo clean
+$ hexo generate
+$ hexo deploy</code></pre>
+<h2 id="自定义域名"><a href="#自定义域名" class="headerlink" title="自定义域名"></a>自定义域名</h2><p>此时访问网站用的是 <code>yourname.github.io</code>，你可能对这个链接不太满意，想用自己的域名，往下看。</p>
+<p>因为我的域名是阿里云注册的，咱们还是以阿里云为例：</p>
+<ol>
+<li>首先解析你的域名。<a target="_blank" rel="noopener" href="https://homenew.console.aliyun.com/">阿里云</a><br>可以参考我的解析 <blockquote>
+<p><code>@</code> 指向到<code>yourname.github.io</code>的 ip<br><code>www</code> 选择 <code>CNAME</code> 执行你的<code>yourname.github.io</code></p>
+</blockquote>
+</li>
+</ol>
+<p><img src="http://static.clearfix.ltd/20201119150858.jpg" alt="解析截图"></p>
+<ol start="2">
+<li><p>返回Github，配置你的域名<br>进入你的项目<code>yourname.github.io</code>，然后<code>Settings</code>，把你的域名填写到<code>Custom domain</code><br>下面是我自己的配置<br><img src="http://static.clearfix.ltd/20201119151723.jpg" alt="Github配置"></p>
+</li>
+<li><p>接下来，你就能用你的域名访问博客了。</p>
+</li>
+</ol>
+<h2 id="日常部署"><a href="#日常部署" class="headerlink" title="日常部署"></a>日常部署</h2><blockquote>
+<p>需要注意前面你的部署分支 <code>gh-pages</code> 是你的项目打包后的代码，跟你本地的代码是不一样的。不要在<code>gh-pages</code> 分支pull代码，切记。<br>如果你嫌每次都需要执行 <code>hexo clean</code> <code>hexo generate</code> <code>hexo deploy</code> 麻烦，可以写一个shell脚本，每次只需要 <code>sh deploy.sh</code>，我现在就是这么做的。<br>每次执行完<code>hexo clean</code>就会把 <code>CNAME</code> 文件清除掉。这个文件你可以写到 <code>source</code> 文件夹里面，这样每次打包都会把这个文件重新复制到<code>public</code>下了。</p>
+</blockquote>
+<h2 id="尾"><a href="#尾" class="headerlink" title="尾"></a>尾</h2><p>本人也是刚接触Hexo，还正在熟悉。写的有什么错误的地方，欢迎指正，多谢🙏。</p>
+
         </div>
 
     </div>
@@ -195,9 +276,9 @@
 <nav class="article-nav">
   
   
-    <a href="/2020/11/18/Hexo%E5%90%84%E7%A7%8D%E6%A8%A1%E6%9D%BF%E6%B5%8B%E8%AF%95/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2020/11/18/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-caption">上一篇</div>
-      <div class="article-nav-title">Hexo各种模板测试</div>
+      <div class="article-nav-title">BYTEII.COM</div>
     </a>
   
 </nav>
@@ -287,11 +368,7 @@
           </li>
         
           <li>
-            <a href="/2020/11/18/Hexo%E5%90%84%E7%A7%8D%E6%A8%A1%E6%9D%BF%E6%B5%8B%E8%AF%95/">Hexo各种模板测试</a>
-          </li>
-        
-          <li>
-            <a href="/2020/11/18/hello-world/">Hello World</a>
+            <a href="/2020/11/18/hello-world/">BYTEII.COM</a>
           </li>
         
       </ul>
