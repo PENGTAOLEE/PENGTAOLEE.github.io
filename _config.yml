@@ -14,9 +14,9 @@ favicon: /favicon.png
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: http://example.com
+url: http://byteii.com
 root: /
-permalink: :mypath/:title/
+permalink: :mypath/:title.html
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
