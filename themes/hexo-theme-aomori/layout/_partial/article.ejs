@@ -73,6 +73,8 @@
 
     <%- partial('post/nav') %>
 
+
+    <div id="aplayer"></div>
     <section class="share" style="display: none;">
         <div class="share-title"><%= __('share') %></div>
         <a class="share-item" target="_blank"
@@ -114,3 +116,18 @@
 <% if (config.aomori_busuanzi){ %>
 <script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <% } %>
+<%- js('modules/aplayer.min.js?' + theme.version) %>
+<script type="text/javascript">
+    ;(function() {
+        const ap = new APlayer({
+            container: document.getElementById('aplayer'),
+            autoplay: true,
+            audio: [{
+                name: '十年',
+                artist: '陈奕迅',
+                url: '/images/陈奕迅-十年.mp3',
+                cover: 'https://p3fx.kgimg.com/stdmusic/20160907/20160907172212861609.jpg'
+            }]
+        });
+    })();
+</script>
