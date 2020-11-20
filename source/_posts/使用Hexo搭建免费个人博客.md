@@ -2,6 +2,7 @@
 title: 使用Hexo搭建免费个人博客
 date: 2020-11-19 13:50:47
 tags: Hexo
+mypath: archive
 photos:
 - https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
 ---

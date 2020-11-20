@@ -1,5 +1,6 @@
 ---
 title: BYTEII.COM
+mypath: archive
 photos: 
 - /images/avatar.jpg
 ---

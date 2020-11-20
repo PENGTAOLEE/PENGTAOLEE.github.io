@@ -1,3 +1,8 @@
+# 提交Git
+git add .
+git commit -m "up"
+git push origin main:master
+
 # 部署脚本
 hexo clean
 hexo generate
