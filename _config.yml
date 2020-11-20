@@ -141,7 +141,7 @@ aomori_social:
     url:
 
 # 百度链接提交
-aomori_baidu_sitepush: false  # or false
+aomori_baidu_sitepush: true  # or false
 
 # 百度统计
 aomori_baidu_analytics: 'aa1c1e713a4cf3cf28ab3f302ec616c4'
