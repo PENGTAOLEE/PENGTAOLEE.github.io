@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://byteii.com/archive/2020/fund-income.html</loc>
+    
+    <lastmod>2020-11-21</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://byteii.com/friends/index.html</loc>
     
     <lastmod>2020-11-20</lastmod>
@@ -9,14 +16,14 @@
   </url>
   
   <url>
-    <loc>http://byteii.com/archive/hello-world.html</loc>
+    <loc>http://byteii.com/archive/2020/hello-world.html</loc>
     
     <lastmod>2020-11-20</lastmod>
     
   </url>
   
   <url>
-    <loc>http://byteii.com/archive/%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.html</loc>
+    <loc>http://byteii.com/archive/2020/%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.html</loc>
     
     <lastmod>2020-11-20</lastmod>
     
@@ -32,15 +39,22 @@
 
   <url>
     <loc>http://byteii.com/</loc>
-    <lastmod>2020-11-20</lastmod>
+    <lastmod>2020-11-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
+    <loc>http://byteii.com/tags/%E8%B4%A2%E5%8A%A1%E8%87%AA%E7%94%B1/</loc>
+    <lastmod>2020-11-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://byteii.com/tags/Hexo/</loc>
-    <lastmod>2020-11-20</lastmod>
+    <lastmod>2020-11-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
