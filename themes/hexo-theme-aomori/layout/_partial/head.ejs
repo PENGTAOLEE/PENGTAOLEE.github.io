@@ -69,5 +69,15 @@
         window.aomori_logo_typed_animated = <%= config.aomori_logo_typed_animated || false %>
         window.aomori_search_algolia = <%= config.aomori_search_algolia || false %>
     </script>
+    <script src="//cdn.jsdelivr.net/npm/leancloud-storage@4.8.0/dist/av-min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            AV.init({
+                appId: "HmQP8OJIzaX2I60qLaPG7Xio-gzGzoHsz",
+                appKey: "YkpwQ5T3idibc5fKXyOQkxrY",
+                serverURL: "https://hmqp8oji.lc-cn-n1-shared.com"
+            });
+        })();
+    </script>
 
 </head>

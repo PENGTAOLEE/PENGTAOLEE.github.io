@@ -191,3 +191,10 @@ aomori_gitalk:
   admin: 
     - PENGTAOLEE
   distractionFreeMode: true // Facebook-like distraction free mode
+
+# add post views
+leancloud_visitors:
+  enable: true
+  app_id: HmQP8OJIzaX2I60qLaPG7Xio-gzGzoHsz
+  app_key: YkpwQ5T3idibc5fKXyOQkxrY
+
