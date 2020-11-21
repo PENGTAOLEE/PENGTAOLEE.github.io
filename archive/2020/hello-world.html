@@ -57,6 +57,16 @@
         window.aomori_logo_typed_animated = false
         window.aomori_search_algolia = true
     </script>
+    <script src="//cdn.jsdelivr.net/npm/leancloud-storage@4.8.0/dist/av-min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            AV.init({
+                appId: "HmQP8OJIzaX2I60qLaPG7Xio-gzGzoHsz",
+                appKey: "YkpwQ5T3idibc5fKXyOQkxrY",
+                serverURL: "https://hmqp8oji.lc-cn-n1-shared.com"
+            });
+        })();
+    </script>
 
 <meta name="generator" content="Hexo 5.2.0"></head>
 
@@ -135,7 +145,7 @@
             <section class="inner">
                 <section class="inner-main">
                     <div class="post">
-    <article id="post-ckhrcymqn0003lmjcf65g096c" class="article article-type-post" itemscope
+    <article id="post-ckhroca2v0003s4jcfrovgbjm" class="article article-type-post" itemscope
     itemprop="blogPost">
 
     <div class="article-inner">
@@ -183,9 +193,10 @@
             
 
             
-            <div class="article-busuanzi">
-                有 <span id="busuanzi_value_page_pv">N</span> 人看过
-            </div>
+                <div class="article-counter">
+                    阅读数:
+                    <span id="/archive/2020/hello-world.html" class="leancloud_visitors" data-flag-title="BYTEII.COM"></span>次
+                </div>
             
 
         </div>
@@ -269,7 +280,7 @@
     ;(function() {
         const ap = new APlayer({
             container: document.getElementById('aplayer'),
-            autoplay: true,
+            autoplay: false,
             audio: [{
                 name: '十年',
                 artist: '陈奕迅',
@@ -372,6 +383,11 @@
         <div class="footer-inner"> 
             BYTEII.COM &copy; 2020<br>
             Powered By Hexo
+            
+                <div class="article-busuanzi" style="display:inline-block;padding-left:10px;">
+                    有 <span id="busuanzi_value_page_pv">N</span> 人看过
+                </div>
+            
         </div>
     </div>
 
@@ -420,6 +436,42 @@
     })();
 </script>
 
+
+<script tyle="text/javascript">
+     // 显示次数
+     function showTime(Counter) {
+        var query = new AV.Query("Counter");
+        console.log(query)
+        if($(".leancloud_visitors").length > 0){
+            var url = $(".leancloud_visitors").attr('id').trim();
+            // where field
+            query.equalTo("words", url);
+            // count 
+            query.count().then(function (number) {
+                // There are number instances of MyClass where words equals url.
+                $(document.getElementById(url)).text(number?  number : '0');
+            }, function (error) {
+                // error is an instance of AVError.
+            });
+        }
+    }
+   // 追加pv
+    function addCount(Counter) {
+        var url = $(".leancloud_visitors").length > 0 ? $(".leancloud_visitors").attr('id').trim() : 'icafebolger.com';
+        var Counter = AV.Object.extend("Counter");
+        var query = new Counter;
+        query.save({
+            words: url
+        }).then(function (object) {
+
+        })
+    }
+    $(function () {
+        var Counter = AV.Object.extend("Counter");
+        addCount(Counter);
+        showTime(Counter);
+    });
+</script>
 
 
 </body>
