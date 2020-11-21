@@ -54,7 +54,7 @@
             },
             
         }
-        window.aomori_logo_typed_animated = false
+        window.aomori_logo_typed_animated = true
         window.aomori_search_algolia = true
     </script>
     <script src="//cdn.jsdelivr.net/npm/leancloud-storage@4.8.0/dist/av-min.js"></script>
@@ -82,7 +82,10 @@
             
             <div class="header-type-inner">
                 
-                    <a class="header-type-title" href="/">BYTEII.COM</a>
+                    <div id="typed-strings" style="display:none">
+                        <p>BYTEII.COM</p>
+                    </div>
+                    <a class="header-type-title" id="typed" href="/"></a>
                 
     
                 
@@ -145,7 +148,7 @@
             <section class="inner">
                 <section class="inner-main">
                     <div class="post">
-    <article id="post-ckhron1en00010ejcbqxidoos" class="article article-type-post" itemscope
+    <article id="post-ckhrpzbys0001myjcf5lh3e16" class="article article-type-post" itemscope
     itemprop="blogPost">
 
     <div class="article-inner">
@@ -438,7 +441,6 @@
      // 显示次数
      function showTime(Counter) {
         var query = new AV.Query("Counter");
-        console.log(query)
         if($(".leancloud_visitors").length > 0){
             var url = $(".leancloud_visitors").attr('id').trim();
             // where field
