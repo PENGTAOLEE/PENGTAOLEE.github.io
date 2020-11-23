@@ -287,9 +287,23 @@
             BYTEII.COM &copy; 2020<br>
             Powered By Hexo
             
+            <!-- 运行时间 -->
+            <div class="running-time" style="display:inline-block;padding-left:10px;">
+                本站运行<span id="running-time">N</span>天
+            </div>
+            
+            
                 <!-- <div class="article-busuanzi" style="display:inline-block;padding-left:10px;">
                     有 <span id="busuanzi_value_page_pv">N</span> 人看过
                 </div> -->
+                <div class="article-busuanzi">
+                    <span id="busuanzi_container_site_uv">
+                        总访客数<span id="busuanzi_value_site_uv"></span>人次
+                    </span>
+                    <span id="busuanzi_container_site_pv" style="padding-left:10px;">
+                        总访问量<span id="busuanzi_value_site_pv"></span>次
+                    </span>
+                </div>
             
         </div>
     </div>
@@ -378,6 +392,17 @@
         addCount(Counter);
         showTime(Counter);
     });
+</script>
+
+
+
+<script type="text/javascript">
+    var urodz = new Date("11/11/2020");  //建站时间
+    var now = new Date();
+    var ile = now.getTime() - urodz.getTime();
+    var dni = Math.floor(ile / (1000 * 60 * 60 * 24));
+    console.log(+dni)
+    document.getElementById('running-time').innerHTML = dni
 </script>
 
 
