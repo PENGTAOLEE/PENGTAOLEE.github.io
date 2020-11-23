@@ -1,6 +1,7 @@
 ---
 title: BYTEII.COM
 mypath: archive
+date: 2020-11-11 00:00:00
 photos: 
 - /images/avatar.jpg
 ---
