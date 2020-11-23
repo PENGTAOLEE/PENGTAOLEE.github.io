@@ -152,6 +152,9 @@ aomori_baidu_analytics: 'aa1c1e713a4cf3cf28ab3f302ec616c4'
 # 不蒜子 统计
 aomori_busuanzi: true
 
+# 运行时间统计
+running_time: true
+
 # 转载链接
 link_reprint:
   -

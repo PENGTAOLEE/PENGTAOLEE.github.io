@@ -805,7 +805,8 @@ img:not([src]):not([srcset]) {
             }
             
             .article-busuanzi,
-            .article-counter {
+            .article-counter,
+            .running-tim {
                 align-items: center;
                 border-left: 3px solid var(--color-light);
                 color: var(--color-white);
