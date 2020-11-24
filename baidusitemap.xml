@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://byteii.com/archive/2020/fund-income.html</loc>
+    <lastmod>2020-11-24</lastmod>
+  </url>
+  <url>
     <loc>http://byteii.com/archive/2020/hello-world.html</loc>
     <lastmod>2020-11-23</lastmod>
   </url>
   <url>
     <loc>http://byteii.com/archive/2020/%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.html</loc>
-    <lastmod>2020-11-23</lastmod>
-  </url>
-  <url>
-    <loc>http://byteii.com/archive/2020/fund-income.html</loc>
     <lastmod>2020-11-23</lastmod>
   </url>
 </urlset> 
