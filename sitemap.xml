@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://byteii.com/archive/2020/two-sum.html</loc>
+    
+    <lastmod>2020-11-24</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://byteii.com/archive/2020/fund-income.html</loc>
     
     <lastmod>2020-11-24</lastmod>
@@ -47,6 +54,13 @@
   
   <url>
     <loc>http://byteii.com/tags/%E8%B4%A2%E5%8A%A1%E8%87%AA%E7%94%B1/</loc>
+    <lastmod>2020-11-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://byteii.com/tags/%E5%88%B7%E9%A2%98/</loc>
     <lastmod>2020-11-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
