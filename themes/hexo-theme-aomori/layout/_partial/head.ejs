@@ -23,12 +23,24 @@
     <meta name="baidu-site-verification" content="code-gxYXDmSsas" />
     <meta name="theme-color" content="#f0f3f6">
 
-    <% if (config.description){ %>
-    <meta name="description" content="<%= config.description %>">
-    <% } %>
+    <%
+        var keywords = page.keywords;
+        if (!keywords){
+            keywords = config.keywords;
+        }
 
+        var description = page.description;
+        if (!description){
+            description = config.description;
+        }
+    %>
+
+    <% if (config.description){ %>
+    <meta name="description" content="<% if (description){ %><%= description %> <% } %>">
+    <% } %>
+    
     <% if (config.keywords){ %>
-    <meta name="keywords" content="<%= config.keywords %>">
+    <meta name="keywords" content="<% if (keywords){ %><%= keywords %> <% } %>">
     <% } %>
     
     <% if (config.aomori_search_algolia){ %>
