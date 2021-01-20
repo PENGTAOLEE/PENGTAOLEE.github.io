@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Archive | 2021/1 - BYTEII.COM</title>
+    <title>使用JS获取数组内非零非负最小值的下标 - BYTEII.COM</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="baidu-site-verification" content="code-gxYXDmSsas" />
     <meta name="theme-color" content="#f0f3f6">
@@ -42,7 +42,7 @@
 
 
     <script>
-        window.isPost = false
+        window.isPost = true
         window.aomori = {
             
             gitalk: {
@@ -155,48 +155,162 @@
         <div class="main">
             <section class="inner">
                 <section class="inner-main">
-                    
+                    <div class="post">
+    <article id="post-ckk5a4coj0005a167046gbxbc" class="article article-type-post" itemscope
+    itemprop="blogPost">
+
+    <div class="article-inner">
+
+        
+          
+        
+        
+        
+
+        
+        <header class="article-header">
+            
   
+    <h1 class="article-title" itemprop="name">
+      使用JS获取数组内非零非负最小值的下标
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
+
+        </header>
+        
+
+        <div class="article-more-info article-more-info-post hairline">
+
+            <div class="article-date">
+  <time datetime="2021-01-20T10:13:55.000Z" itemprop="datePublished">2021-01-20</time>
+</div>
+
+            
+
+            
+            <div class="article-tag">
+                <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%88%B7%E9%A2%98/" rel="tag">刷题</a></li></ul>
+            </div>
+            
+
+            
+                <div class="article-counter">
+                    阅读数:
+                    <span id="/archive/2021/getMinIndex.html" class="leancloud_visitors" data-flag-title="使用JS获取数组内非零非负最小值的下标"></span>次
+                </div>
+            
+
         </div>
-        <div class="archives">
+
+        <div class="article-entry post-inner-html hairline" itemprop="articleBody">
+            <p>直接上结果吧。</p>
+<blockquote>
+<ol>
+<li>新构建一个不包含负数与0的新数组</li>
+<li>拿到新数组内最小值</li>
+<li>查出最小值在原数组内的位置</li>
+</ol>
+</blockquote>
+<a id="more"></a>
+
+<pre><code class="html">&lt;script type=&quot;text/javascript&quot;&gt;
+    ;(function() &#123;
+        var arr = [8, 21, 0, -3, 32, 18, 9, 28, 17]
+        function getIndex(arr) &#123;
+            let index = -1
+            if (!arr.length) &#123;
+                return 
+            &#125;
+            let min = Math.min(...arr.filter((item) =&gt; &#123;
+                return item &gt; 0
+            &#125;))
+
+            index = arr.indexOf(min)
+            return index
+        &#125;
+        getIndex(arr)
+    &#125;)()
+&lt;/script&gt;</code></pre>
+
+        </div>
+
+    </div>
+
     
-    <article class="archive-article archive-type-post">
+
+    
+
+    
+
+    
+<div class="article-copyright hairline">
+  <p>
+    本作品采用 <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a> 进行许可。
+  </p>
+</div>
+
+
+    
+
+    
+<nav class="article-nav">
   
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/archive/2021/getMinIndex.html">使用JS获取数组内非零非负最小值的下标</a>
-    </h1>
+    <a href="/archive/2021/TTFB.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-caption">上一篇</div>
+      <div class="article-nav-title">前端性能:网站加载 Waiting (TTFB) 时间过长原因和解决办法</div>
+    </a>
   
+</nav>
+
+
+
+    <div id="aplayer"></div>
+    <section class="share" style="display: none;">
+        <div class="share-title">分享</div>
+        <a class="share-item" target="_blank"
+            href="https://twitter.com/share?text=使用JS获取数组内非零非负最小值的下标 - BYTEII.COM&url=http://byteii.com/archive/2021/getMinIndex.html">
+            <box-icon type='logo' name='twitter'></box-icon>
+        </a>
+        <a class="share-item" target="_blank"
+            href="https://www.facebook.com/sharer.php?title=使用JS获取数组内非零非负最小值的下标 - BYTEII.COM&u=http://byteii.com/archive/2021/getMinIndex.html">
+            <box-icon name='facebook-square' type='logo' ></box-icon>
+        </a>
+        <!-- <a class="share-item" target="_blank"
+            href="https://service.weibo.com/share/share.php?title=使用JS获取数组内非零非负最小值的下标 - BYTEII.COM&url=http://byteii.com/archive/2021/getMinIndex.html&pic=">
+            <div class="n-icon n-icon-weibo"></div>
+        </a> -->
+    </section>
 
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/archive/2021/TTFB.html">前端性能:网站加载 Waiting (TTFB) 时间过长原因和解决办法</a>
-    </h1>
-  
-
-</article>
-  
-  
-    </div></section>
-  
 
 
 
 
+<section class="comments">
+    <div id="gitalk-container"></div>
+</section>
+
+
+
+<script src="/modules/aplayer.min.js?1.13.0.js"></script>
+
+<script type="text/javascript">
+    ;(function() {
+        const ap = new APlayer({
+            container: document.getElementById('aplayer'),
+            autoplay: false,
+            audio: [{
+                name: '十年',
+                artist: '陈奕迅',
+                url: '/images/陈奕迅-十年.mp3',
+                cover: 'https://p3fx.kgimg.com/stdmusic/20160907/20160907172212861609.jpg'
+            }]
+        });
+    })();
+</script>
+
+</div>
                 </section>
             </section>
 
@@ -219,6 +333,12 @@
 <div class="widget" id="widget">
     
       
+  <div class="widget-wrap">
+    <div class="widget-inner">
+      <div class="toc post-toc-html"></div>
+    </div>
+  </div>
+
     
       
 
