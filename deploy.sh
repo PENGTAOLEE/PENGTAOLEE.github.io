@@ -8,5 +8,5 @@ hexo clean
 hexo generate
 hexo deploy
 
-export HEXO_ALGOLIA_INDEXING_KEY=5d669d3553911eb2f2752fb6526c7b82
+export HEXO_ALGOLIA_INDEXING_KEY=059bddc683e48371246625af624fb5ac
 hexo algolia

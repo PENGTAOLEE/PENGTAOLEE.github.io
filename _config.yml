@@ -181,8 +181,8 @@ aomori_disqus_shortname: ''
 
 # 搜索
 algolia:
-  applicationID: 'CH45RMFX9F'
-  apiKey: 'cfd706793bd277767018fe6dc682a734' # Search-Only API Key
+  applicationID: 'NRP63AXQSU'
+  apiKey: '059bddc683e48371246625af624fb5ac' # Search-Only API Key
   indexName: 'byteii'
 
 aomori_search_algolia: true
